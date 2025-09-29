@@ -10,7 +10,6 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import time
 import pandas as pd
 
-
 def get_column_names(driver):
     columns_path = "//*[@class='table-wrapper']/table/thead/tr/th"
     columns = wait_and_find_all(driver, columns_path)
